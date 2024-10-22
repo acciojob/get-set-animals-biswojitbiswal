@@ -4,17 +4,28 @@ class Animal {
 		this.species = species;
 		console.log(`The ${species} makes a sound`)
 	}
+	makeSound() {
+	    console.log("Some generic animal sound");
+	}
 }
 
 class Dog extends Animal {
-	bark(){
-		console.log("woof");
+	constructor() {
+	    super("Dog");
+	}
+
+	makeSound() {
+	    console.log("woof");
 	}
 }
 
 class Cat extends Animal {
-	purr(){
-		console.log("purr");
+	constructor() {
+	    super("Cat");
+	}
+
+	makeSound() {
+	    console.log("purr");
 	}
 }
 
